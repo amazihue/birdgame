@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 24px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn2 {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 24px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Birds Flying: Identify Me</h2>
+<p>Find the birds</p>
+
+<div class="container">
+  <img src="bkg.jpg" alt="beach" style="width:180%">
+  <button class="btn" style="background: url(bird1.png)" onclick="myFunction()"></button>
+  <button class="btn2" style="background: url(parrot.png)" onclick="myFunction2()"></button>
+</div>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "You found a seagull!";
+}
+</script>
+<script>
+    function myFunction2() {
+      document.getElementById("demo").innerHTML = "You found a parrot!";
+    }
+    </script>
+
+</body>
+</html>
